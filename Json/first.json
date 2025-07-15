@@ -1,0 +1,21 @@
+{
+    "comment": "no single qoutes",
+    "can use strngs booleans":"Property must be double qouted",
+    "json.parse":"convert into javascript object",
+    "score":11.75,
+    "IsAdmin":false,
+    "license":null,
+     "We can":"Use array also",
+     "sjopitems":["food","clothes"],
+     "We can create an object also":"Inside JSON there is JSON",
+     "myObj": {
+        "name": "nested",
+        "marks": 45 
+     },
+     "can use":"json.parsed(isAdmin)",
+     "can-use":"parsed[shopitem][2]",
+     "use":"parse=JSON.parse(myjson)",
+     "Json":"Can be nested in a lot of levels"
+}
+
+ 
