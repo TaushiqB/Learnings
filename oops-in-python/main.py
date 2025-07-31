@@ -1,18 +1,21 @@
 # Each variable has been instantiated from a class. Each Datatype is an object
 class Item:
+    def __init__(self, name: str, price: float, quantity=0):
+        assert price >= 0, f"Price {price} is not greater than or equal to zero!"
+        assert quantity >= 0, f"Quantity {quantity} is not greater than or equal to zero!"
+        
+        # Initializing instance variables
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+    
     def calculate_total_price(self):
         return self.price * self.quantity
 
-item1 = Item() # creating instance of the class
-item1.name = "Tau"
-item1.price = 100
-item1.quantity = 5
+item1 = Item("Tau", 100, 5) # creating instance of the class
 print(item1.calculate_total_price()) # calling the method to calculate total price
 
-item2 = Item() # creating another instance of the class
-item2.name = "T-Shirt"
-item2.price = 50
-item2.quantity = 10
+item2 = Item("T-Shirt", 50, 10) # creating another instance of the class
 
 # Displaying the type of each variable
 print(type(item1))
