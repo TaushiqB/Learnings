@@ -14,7 +14,7 @@ class Settings(BaseModel):
 
 def get_settings():
     return Settings()  # Passed as an Instance 
-
+ 
 @app.post('/signup')
 def signup(user: UserSignup):
     return {'message': f'user {user.username} signed up successfully'}
